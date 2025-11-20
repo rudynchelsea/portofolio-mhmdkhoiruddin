@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Muhammad Khoiruddin, S.Kom., Gr.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        festika: {
+                            primary: '#2563EB', // Royal Blue
+                            secondary: '#1E40AF', // Darker Blue
+                            accent: '#F59E0B', // Amber/Gold for achievements
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        .hero-pattern {
+            background-color: #f3f4f6;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e5e7eb' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="text-slate-800 font-sans bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-festika-primary">MK<span class="text-festika-accent">.</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-festika-primary transition duration-300">Beranda</a>
+                    <a href="#about" class="text-gray-600 hover:text-festika-primary transition duration-300">Tentang</a>
+                    <a href="#skills" class="text-gray-600 hover:text-festika-primary transition duration-300">Keahlian</a>
+                    <a href="#festika" class="text-gray-600 hover:text-festika-primary transition duration-300">Visi FESTIKA</a>
+                    <a href="#contact" class="px-4 py-2 bg-festika-primary text-white rounded-lg hover:bg-festika-secondary transition duration-300">Hubungi Saya</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Beranda</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Tentang</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Keahlian</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Hubungi Saya</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 md:pt-32 md:pb-24 hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 mt-8 md:mt-0 text-center md:text-left">
+                <div class="inline-block px-3 py-1 mb-4 text-sm font-semibold text-festika-primary bg-blue-100 rounded-full">
+                    Peserta FESTIKA JATIM 2025
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                    Muhammad Khoiruddin, <span class="text-festika-primary">S.Kom., Gr.</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-6 font-light">
+                    Guru Informatika & Penggiat Teknologi Pendidikan
+                </h2>
+                <p class="text-gray-500 mb-8 max-w-lg mx-auto md:mx-0">
+                    Mendedikasikan diri untuk transformasi digital di SMK Negeri 1 Plosoklaten. Membangun generasi melek teknologi untuk masa depan Indonesia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="px-8 py-3 bg-festika-primary text-white rounded-lg shadow-lg hover:bg-festika-secondary transition duration-300 font-semibold">
+                        <i class="fas fa-envelope mr-2"></i> Kontak Saya
+                    </a>
+                    <a href="#about" class="px-8 py-3 bg-white text-festika-primary border border-festika-primary rounded-lg shadow hover:bg-blue-50 transition duration-300 font-semibold">
+                        Lihat Profil
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-amber-400 rounded-full blur opacity-75 animate-pulse"></div>
+                    <!-- Placeholder Image: Ganti URL ini dengan foto asli Anda -->
+                    <img 
+                        src="AQ.PNG" 
+                        alt="Muhammad Khoiruddin" 
+                        class="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-2xl"
+                        onerror="this.src='https://via.placeholder.com/400x400?text=Foto+Profil'"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800">Tentang Saya</h2>
+                <div class="w-20 h-1 bg-festika-accent mx-auto mt-4 rounded"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-festika-secondary">Profil Profesional</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Saya adalah seorang pendidik profesional bersertifikat (Gr.) dengan latar belakang Sarjana Komputer (S.Kom). Saat ini, saya aktif mengajar mata pelajaran Informatika di <strong>SMK Negeri 1 Plosoklaten</strong>.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Saya percaya bahwa teknologi bukan hanya alat, tetapi katalisator untuk membuka potensi siswa. Dalam setiap pembelajaran, saya berusaha mengintegrasikan praktik industri terkini agar siswa siap kerja.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-festika-primary">
+                        <h4 class="font-bold text-lg mb-2 text-slate-800">Data Diri</h4>
+                        <ul class="space-y-3 text-sm md:text-base">
+                            <li class="flex items-start">
+                                <i class="fas fa-user w-8 text-festika-primary mt-1"></i>
+                                <span>Muhammad Khoiruddin, S.Kom., Gr.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-building w-8 text-festika-primary mt-1"></i>
+                                <span>SMK Negeri 1 Plosoklaten</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt w-8 text-festika-primary mt-1"></i>
+                                <span>Dsn. Semanding, Ds. Semanding, Kec. Pagu, Kab. Kediri</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cards Stats -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                        <div class="text-4xl text-festika-primary mb-2"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h4 class="font-bold text-gray-800">Pengajar</h4>
+                        <p class="text-sm text-gray-500">Informatika & Teknologi</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                        <div class="text-4xl text-festika-accent mb-2"><i class="fas fa-certificate"></i></div>
+                        <h4 class="font-bold text-gray-800">Sertifikasi</h4>
+                        <p class="text-sm text-gray-500">Guru Profesional (Gr.)</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                        <div class="text-4xl text-green-600 mb-2"><i class="fas fa-code"></i></div>
+                        <h4 class="font-bold text-gray-800">Keahlian</h4>
+                        <p class="text-sm text-gray-500">Coding & Jaringan</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition">
+                        <div class="text-4xl text-purple-600 mb-2"><i class="fas fa-lightbulb"></i></div>
+                        <h4 class="font-bold text-gray-800">Inovasi</h4>
+                        <p class="text-sm text-gray-500">FESTIKA Jatim 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Kompetensi & Keahlian</h2>
+                <p class="text-slate-400 mt-2">Fokus pengajaran dan pengembangan diri</p>
+                <div class="w-20 h-1 bg-festika-primary mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-slate-800 p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pemrograman Dasar</h3>
+                    <p class="text-slate-400 mb-4">Mengajarkan logika algoritma dan bahasa pemrograman dasar (Python, C++, atau Java) kepada siswa untuk membangun pondasi computational thinking.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-slate-800 p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-network-wired text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Jaringan Komputer</h3>
+                    <p class="text-slate-400 mb-4">Pemahaman mendalam tentang topologi, konfigurasi Mikrotik/Cisco, dan manajemen jaringan dasar untuk infrastruktur sekolah.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-slate-800 p-8 rounded-2xl hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-amber-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-photo-video text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Multimedia & Desain</h3>
+                    <p class="text-slate-400 mb-4">Integrasi desain grafis dan multimedia dalam pembelajaran untuk menciptakan materi ajar yang interaktif dan menarik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FESTIKA Context Section -->
+    <section id="festika" class="py-16 bg-blue-50">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <img src="https://placehold.co/100x100/2563EB/white?text=TIKP" alt="Logo TIKP" class="mx-auto mb-6 rounded-full shadow-lg h-24 w-24 object-cover">
+            <h2 class="text-3xl font-bold text-slate-800 mb-4">Menuju FESTIKA JATIM 2025</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                "Berpartisipasi aktif dalam Festival TIK Pendidikan yang diselenggarakan oleh UPT. TIKP Jawa Timur sebagai wujud komitmen dalam meningkatkan kualitas pendidikan berbasis teknologi."
+            </p>
+            <div class="inline-block bg-white p-8 rounded-xl shadow-sm border border-blue-100 text-left max-w-2xl">
+                <h3 class="text-lg font-bold text-festika-secondary mb-2">Fokus Partisipasi:</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Inovasi Media Pembelajaran Interaktif.</li>
+                    <li>Penerapan IoT (Internet of Things) di lingkungan Sekolah.</li>
+                    <li>Pengembangan Manajemen Sekolah berbasis Digital.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800 mb-4">Hubungi Saya</h2>
+                    <p class="text-gray-600 mb-8">
+                        Terbuka untuk diskusi mengenai inovasi pendidikan, kolaborasi teknologi, atau kegiatan sekolah di SMK Negeri 1 Plosoklaten.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-festika-primary">
+                                <i class="fas fa-map-marked-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Alamat Domisili</h4>
+                                <p class="text-gray-600 text-sm">Dsn. Semanding Ds. Semanding<br>Kec. Pagu Kab. Kediri</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">WhatsApp</h4>
+                                <p class="text-gray-600 text-sm">0822-6409-1851</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-600 text-sm">muhammadkhoiruddin@smkn1plosoklaten.sch.id</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-8 flex space-x-4">
+                        <a href="https://instagram.com/mhmdkhoiruddin" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center hover:bg-festika-primary transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center hover:bg-festika-primary transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 text-white flex items-center justify-center hover:bg-festika-primary transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Maps / Form Placeholder -->
+                <div class="bg-gray-50 p-2 rounded-xl shadow-inner">
+                    <iframe 
+                        class="w-full h-full rounded-lg min-h-[300px]"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9!2d112.0!3d-7.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78570000000001%3A0x0!2sKecamatan%20Pagu!5e0!3m2!1sid!2sid!4v1620000000000!5m2!1sid!2sid" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                    <div class="text-center mt-2 text-xs text-gray-400">
+                        *Peta area Kecamatan Pagu, Kediri
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-2">© 2025 Muhammad Khoiruddin. Dibuat untuk FESTIKA JATIM UPT. TIKP.</p>
+            <p class="text-slate-500 text-sm">Guru Informatika - SMK Negeri 1 Plosoklaten</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple logic for smooth scroll behavior fix if needed
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
